@@ -1,9 +1,13 @@
 <h3>═ Selected projects</h3>
-<button>
-    <p>2025</p>
-    portfolio
-</button>
-<button>
-    <p>2025</p>
-    IdealMeal
-</button>
+@for (project of selectedProjects(); track project.title) {
+  <button
+    (mouseenter)="hovered = project.title"
+    (mouseleave)="hovered = null"
+    [ngStyle]="{
+      'background-color': hovered === project.title ? project.color : 'transparent'
+    }"
+  >
+    <p>{{ project.year }}</p>
+    {{ project.title }}
+  </button>
+}

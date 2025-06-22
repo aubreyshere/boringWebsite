@@ -1,1 +1,28 @@
-<p>skills works!</p>
+<h3>═ Skills</h3>
+<h4>Frontend</h4>
+<div>
+    @for (skill of frontendSkills(); track skill.language) {
+    <div>
+        <img [src]="skill.image" alt="skill.image"/>
+        <p>{{ skill.language }}</p>
+    </div>
+    }
+</div>
+<h4>Backend</h4>
+<div>
+    @for (skill of backendSkills(); track skill.language) {
+    <div>
+        <img [src]="skill.image" alt="skill.image"/>
+        <p>{{ skill.language }}</p>
+    </div>
+    }
+</div>
+<h4>Databases</h4>
+<div>
+    @for (skill of databaseSkills(); track skill.language) {
+    <div>
+        <img [src]="skill.image" alt="skill.image"/>
+        <p>{{ skill.language }}</p>
+    </div>
+    }
+</div>
