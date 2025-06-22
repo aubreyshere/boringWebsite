@@ -8,12 +8,22 @@
     padding: 0px 50px 0px 50px;
     margin-top: 20px;
 
+    h4{
+
+        .emojiText{
+            font-family: EmojiFont;
+            font-size: 20pt;
+        }
+    }
+
     div {
         display: flex;
         gap: 10px;
-        justify-content: center;
+        width: 600px;
+        flex-wrap: wrap;
 
         div {
+            flex-wrap: nowrap;
             padding: 30px;
             display: flex;
             flex-direction: column;
@@ -25,6 +35,7 @@
             border-radius: 8px;
             border: #56876D 1px solid;
             align-items: center;
+            justify-content: center;
             gap: 20px;
             font-size: 18pt;
 
@@ -34,6 +45,8 @@
 
             p {
                 margin: 0px;
+                text-align: center;
+                font-size: 14pt;
             }
         }
     }
